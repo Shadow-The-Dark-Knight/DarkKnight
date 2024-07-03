@@ -1,0 +1,107 @@
+div {
+  font-family: Arial;
+}
+
+body {
+  background-color: rgba(5, 5, 5, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px
+}
+
+nav {
+  text-align: center;
+}
+
+.navbar ul {
+  background-color:rgb(4, 83, 202); 
+  padding: 0px;
+  margin: 0px;
+}
+
+.navbar a {
+  font-family: Arial;
+  color: white;
+  text-decoration: none;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position:relative;
+}
+
+.exit {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top:-30px;
+  right:-380px;
+  background-color: rgb(4, 83, 202);
+  height: 30px;
+  width:30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 45px;
+  padding: 10px;
+  cursor:pointer;
+}
+
+.exit:hover {
+  opacity:0.8;
+}
+
+
+.graphics-button {
+  background-color: rgb(4, 83, 202);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  cursor:pointer;
+}
+
+.navbar div {
+  font-weight: 400;
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.graphics-container,
+.quality-container,
+.controls-container,
+.chat-container,
+.keybinds-container,
+.game-mechanics-container {
+  background-color: rgb(4, 83, 202);
+  font-size: 18px;
+  padding: 10px 40px;
+  height: 25px;
+  border-radius: 8px;
+  display: flex;
+  white-space: nowrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  opacity: 1;
+  transition: opacity 0.15s;
+  cursor: pointer;
+}
+
+.graphics-container:hover,
+.quality-container:hover,
+.controls-container:hover,
+.chat-container:hover,
+.keybinds-container:hover,
+.game-mechanics-container:hover {
+  background-color: rgba(4, 83, 202, 0.418);
+} 
+
+
+
+

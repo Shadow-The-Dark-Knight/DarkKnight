@@ -1,0 +1,196 @@
+div {
+  font-family: Arial;
+}
+
+body {
+  background-color: rgba(5, 5, 5, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  text-align: center;
+}
+
+
+.navbar a {
+  font-family: Arial;
+  color: white;
+  text-decoration: none;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position:relative;
+}
+
+.exit {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top:-30px;
+  right:-380px;
+  background-color: rgb(4, 83, 202);
+  height: 30px;
+  width:30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 45px;
+  padding: 10px;
+  cursor:pointer;
+}
+
+.exit :hover {
+  opacity:0.8;
+}
+.navbar a :hover {
+  opacity: 0.5;
+}
+
+
+.navbar div {
+  font-weight: 400;
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.graphics-container,
+.quality-container,
+.controls-container,
+.chat-container,
+.keybinds-container,
+.game-mechanics-container {
+  background-color: rgb(4, 83, 202);
+  font-size: 18px;
+  padding: 10px 40px;
+  height: 25px;
+  border-radius: 8px;
+  display: flex;
+  white-space: nowrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  opacity: 1;
+  transition: opacity 0.15s;
+  cursor: pointer;
+}
+
+.graphics-container:hover,
+.quality-container:hover,
+.controls-container:hover,
+.chat-container:hover,
+.keybinds-container:hover,
+.game-mechanics-container:hover {
+  background-color: rgba(4, 83, 202, 0.418);
+  
+} 
+
+
+.disable-chat {
+  opacity:1;
+  transition: opacity 0.15s;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.disable-chat :hover {
+  opacity: 0.6
+}
+
+
+span {
+  opacity: 1;
+  transition: opacity 0.15s;
+  cursor: pointer
+}
+
+span :hover {
+opacity: 0.4;
+}
+.chat-setting-container {
+  position: relative;
+}
+
+
+
+.disable-circle {
+  position: absolute;
+  right: -20px;
+  top: 10px;
+}
+
+.disable-chat {
+  position: absolute;
+  right:-121px;
+  top: -18px;
+}
+
+.status-circle {
+position: absolute;
+right: -145px;
+top: 10px;
+}
+.status-chat {
+  position: absolute;
+  right:-295px;
+  top: -17px;
+    
+}
+
+.text-size-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.text-title {
+  position: absolute;
+  bottom: -67px;
+  right: -140px;
+}
+
+.smaller-button {
+  position: absolute;
+  bottom: -80px;
+  right: -225px;
+  display: flex;
+  align-items: center;
+}
+
+.normal-button {
+  position: absolute;
+  bottom: -80px;
+  right: -310px;
+  display: flex;
+  align-items: center;
+}
+
+.bigger-button {
+  position: absolute;
+  bottom: -80px;
+  right: -388px;
+  display: flex;
+  align-items: center;
+}
+
+.smaller-button-circle,
+.normal-button-circle,
+.bigger-button-circle {
+  position: absolute;
+  top: -2px;
+  left: -18px;
+}
+
+
+
