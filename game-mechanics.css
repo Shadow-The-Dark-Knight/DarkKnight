@@ -1,15 +1,37 @@
-div {
-  font-family: Arial;
-  color: white;
-  font-size: 18px;;
+*{
+  margin: 0;
+  padding: 0;
 }
+
+
+
 
 body {
   background-color: rgba(5, 5, 5, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 80px
+  margin-top: 80px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.exit {
+  display: flex;
+  justify-content:center;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 400px;
+  border:  2px white solid;
+  width: 30px;
+  height: 30px;
+  color: white;
+  font-size: 20px;
+  background-color: rgb(4, 83, 202);
+  border-radius: 45px;
+  padding: 10px;
+  cursor:pointer;
 }
 
 nav {
@@ -27,51 +49,26 @@ nav {
   align-items: center;
 }
 
+
 .overlay {
   position:relative;
 }
 
-.exit {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top:-30px;
-  right:-380px;
-  background-color: rgb(4, 83, 202);
-  height: 30px;
-  width:30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 45px;
-  padding: 10px;
-  cursor:pointer;
-}
 
-.exit:hover {
+
+.exit :hover {
   opacity:0.8;
 }
 .navbar a:hover {
   opacity: 0.5;
 }
 
-.graphics-button {
-  background-color: rgb(4, 83, 202);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 20px;
-  cursor:pointer;
-}
-
 .navbar div {
   font-weight: 400;
-  display: flex;
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 30px;
 }
 
-.graphics-container,
 .quality-container,
 .controls-container,
 .chat-container,
@@ -79,20 +76,16 @@ nav {
 .game-mechanics-container {
   background-color: rgb(4, 83, 202);
   font-size: 18px;
-  padding: 10px 40px;
-  height: 25px;
   border-radius: 8px;
-  display: flex;
-  white-space: nowrap;
-  justify-content: center;
-  align-items: center;
-  position: relative;
   opacity: 1;
   transition: opacity 0.15s;
   cursor: pointer;
+  width: 150px;
+  height: 45px;
+  text-align: center;
+  align-content: center;
 }
 
-.graphics-container:hover,
 .quality-container:hover,
 .controls-container:hover,
 .chat-container:hover,
@@ -102,188 +95,54 @@ nav {
 } 
 
 
-.shoot-container,
-.movement-shoot-container,
-.movement-shoot-container-space,
-.build-container,
-.movement-build-container,
-.movement-build-container-second,
-.superpower-container,
-.movement-superpower-container,
-.movement-superpower-container-second,
-.teamates-container,
-.movement-show-container-second,
-.mouse-container,
-.movement-mouse-container,
-.movement-mouse-container-second {
-  cursor: pointer;
+
+section {
+  display: flex;
+  border: 2px solid white;
+}
+
+
+main {
+  margin-left: 10px;
+  margin-top: 340px;
+  border: 2px solid white;
+  font-size: 16px;
+}
+
+main div {
+  display: flex;
+}
+
+/* make sure to align buttons properly*/
+
+main div p {
+  display: block;
+  margin-left: 5px;
+  width: 200px;
+  justify-content: space-evenly;
+}
+
+
+p button{
+  margin-left: 10px;
+  margin-top: -15px;
+}
+div button {
+  border-radius: 15px;
+  padding: 17px 35px;
+  border: none;
+  cursor:pointer;
   opacity: 1;
-  transition: opacity 0.15s;
+  transition: opacity 0.15s;  
 }
 
-.shoot-container :hover,
-.movement-shoot-container :hover,
-.movement-shoot-container-space :hover,
-.build-container :hover,
-.movement-build-container :hover,
-.movement-build-container-second :hover,
-.superpower-container :hover,
-.movement-superpower-container :hover,
-.movement-superpower-container-second :hover,
-.teamates-container :hover,
-.movement-show-container-second :hover,
-.mouse-container :hover,
-.movement-mouse-container :hover,
-.movement-mouse-container-second :hover {
-opacity: 0.6;
- 
+div button:hover {
+  opacity: 0.6;
 }
 
-
-
-.shoot-container{
-  position: absolute;
-  right: -60px;
-  bottom: 260px;
-  font-size: 18px;
+.quality-container,
+.controls-container,
+.chat-container,
+.keybinds-container {
+  border: 2px solid red;
 }
-
-.movement-shoot-container {
-  position: absolute;
-  top: -6px;
-  right: -175px;
-  margin-right: -10px;
-  margin-left: 7px;
-  border-radius: 15px;
-  padding: 10px 20px;
-  border: none;
-}
-
-.movement-shoot-container-space {
-  position: absolute;
-  top: -6px;
-  right: -173px;
-  margin-right: -120px;
-  margin-left: 7px;
-  border-radius: 15px;
-  padding: 17px 40px;
-  border: none;
-}
-
-.build-container {
-  position: absolute;
-  right: -58px;
-  bottom: 218px;
-  font-size: 18px;
-}
-
-.movement-build-container {
-  position: absolute;
-  top: -6px;
-  right: -180px;
-  margin-right: -10px;
-  margin-left: 7px;
-  border-radius: 15px;
-  padding: 10px 16px;
-  border: none;
-}
-
-.movement-build-container-second {
-  position: absolute;
-  top: -6px;
-  right: -285px;
-  margin-right: -10px;
-  margin-left: 7px;
-  border-radius: 15px;
-  padding: 10px 20px;
-  border: none;
-}
-
-.superpower-container {
-  position: absolute;
-  right: -115px;
-  bottom: 178px;
-  font-size: 18px;
-}
-
-.movement-superpower-container {
-  position: absolute;
-  top: -6px;
-  right: -60px;
-  margin-right: -70px;
-  margin-left: 7px;
-  border-radius: 15px;
-  padding: 10px 40px;
-  border: none;
-}
-
-.movement-superpower-container-second {
-  position: absolute;
-  top: -6px;
-  right: -120px;
-  margin-right: -120px;
-  margin-left: 7px;
-  border-radius: 15px;
-  padding: 17px 40px;
-  border: none;
-}
-
-.teamates-container {
-  position: absolute;
-  right: -156px;
-  bottom: 138px;
-  font-size: 18px;
-}
-
-.movement-show-container {
-  position: absolute;
-  top: -6px;
-  right: -47px;
-  margin-right: -40px;
-  margin-left: 7px;
-  border-radius: 15px;
-  padding: 10px 30px;
-  border: none;
-}
-
-.movement-show-container-second {
-  position: absolute;
-  top: -6px;
-  right: -80px;
-  margin-right: -120px;
-  margin-left: 7px;
-  border-radius: 15px;
-  padding: 17px 40px;
-  border: none;
-}
-
-.mouse-container {
-  position: absolute;
-  right: -75px;
-  bottom: 95px;
-  font-size: 18px;
-}
-
-.movement-mouse-container {
-  position: absolute;
-  top: -6px;
-  left: 138px;
-  margin-right: -120px;
-  margin-left: 4px;
-  border-radius: 15px;
-  padding: 17px 41px;
-  border: none;
-}
-
-.movement-mouse-container-second {
-  position: absolute;
-  top: -6px;
-  left: 253px;
-  margin-right: -115px;
-  margin-left: 4px;
-  border-radius: 15px;
-  padding: 17px 41px;
-  border: none;
-}
-
-
