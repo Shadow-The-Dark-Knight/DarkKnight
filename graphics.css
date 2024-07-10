@@ -1,24 +1,45 @@
-div {
-  font-family: Arial;
+*{
+  margin: 0;
+  padding: 0;
 }
+
+
+
 
 body {
   background-color: rgba(5, 5, 5, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 80px
+  margin-top: 90px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.exit {
+  display: flex;
+  justify-content:center;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 400px;
+  border:  2px white solid;
+  width: 30px;
+  height: 30px;
+  color: white;
+  font-size: 20px;
+  background-color: rgb(4, 83, 202);
+  border-radius: 45px;
+  padding: 10px;
+  cursor:pointer;
+  margin-bottom: 5px;;
 }
 
 nav {
   text-align: center;
+  margin-top: 51px;
 }
 
-.navbar ul {
-  background-color:rgb(4, 83, 202); 
-  padding: 0px;
-  margin: 0px;
-}
 
 .navbar a {
   font-family: Arial;
@@ -30,49 +51,26 @@ nav {
   align-items: center;
 }
 
+
 .overlay {
   position:relative;
 }
 
-.exit {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top:-30px;
-  right:-380px;
-  background-color: rgb(4, 83, 202);
-  height: 30px;
-  width:30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 45px;
-  padding: 10px;
-  cursor:pointer;
-}
 
-.exit:hover {
+
+.exit :hover {
   opacity:0.8;
 }
-
-
-.graphics-button {
-  background-color: rgb(4, 83, 202);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 20px;
-  cursor:pointer;
+.navbar a:hover {
+  opacity: 0.5;
 }
 
 .navbar div {
   font-weight: 400;
-  display: flex;
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 30px;
 }
 
-.graphics-container,
 .quality-container,
 .controls-container,
 .chat-container,
@@ -80,20 +78,16 @@ nav {
 .game-mechanics-container {
   background-color: rgb(4, 83, 202);
   font-size: 18px;
-  padding: 10px 40px;
-  height: 25px;
   border-radius: 8px;
-  display: flex;
-  white-space: nowrap;
-  justify-content: center;
-  align-items: center;
-  position: relative;
   opacity: 1;
   transition: opacity 0.15s;
   cursor: pointer;
+  width: 150px;
+  height: 45px;
+  text-align: center;
+  align-content: center;
 }
 
-.graphics-container:hover,
 .quality-container:hover,
 .controls-container:hover,
 .chat-container:hover,
@@ -101,6 +95,67 @@ nav {
 .game-mechanics-container:hover {
   background-color: rgba(4, 83, 202, 0.418);
 } 
+
+
+
+section {
+  display: flex;
+}
+
+
+main {
+  margin-top: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 16px;
+  margin-left:10px;
+}
+
+main div {
+  display: flex;
+}
+
+.main-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: -100%;
+  margin-left: 10px;
+}
+
+.main-three {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: -100%;
+  margin-left: 10px;
+}
+
+
+div button {
+  margin-bottom: -15px;
+  margin-top: 40px;
+  border-radius: 15px;
+  padding: 17px 35px;
+  border: none;
+  cursor:pointer;
+  opacity: 1;
+  transition: opacity 0.15s;  
+}
+
+div button:hover {
+  opacity: 0.6;
+}
+
+
+.quality-container,
+.controls-container,
+.chat-container,
+.keybinds-container,
+.game-mechanics-container {
+  border: 2px solid red;
+}
 
 
 

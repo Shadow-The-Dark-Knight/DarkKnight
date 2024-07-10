@@ -98,36 +98,42 @@ nav {
 
 section {
   display: flex;
-  border: 2px solid white;
 }
 
 
 main {
-  margin-left: 10px;
-  margin-top: 340px;
-  border: 2px solid white;
+  margin-top: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   font-size: 16px;
+  margin-left:10px;
 }
 
 main div {
   display: flex;
 }
 
-/* make sure to align buttons properly*/
-
-main div p {
-  display: block;
-  margin-left: 5px;
-  width: 200px;
-  justify-content: space-evenly;
-}
-
-
-p button{
+.main-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: -100%;
   margin-left: 10px;
-  margin-top: -15px;
 }
+
+.main-three {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: -100%;
+  margin-left: 10px;
+}
+
+
 div button {
+  margin-bottom: -15px;
+  margin-top: 40px;
   border-radius: 15px;
   padding: 17px 35px;
   border: none;
@@ -139,6 +145,7 @@ div button {
 div button:hover {
   opacity: 0.6;
 }
+
 
 .quality-container,
 .controls-container,

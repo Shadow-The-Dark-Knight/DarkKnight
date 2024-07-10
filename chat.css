@@ -1,6 +1,10 @@
-div {
-  font-family: Arial;
+*{
+  margin: 0;
+  padding: 0;
 }
+
+
+
 
 body {
   background-color: rgba(5, 5, 5, 0.8);
@@ -10,6 +14,24 @@ body {
   margin-top: 80px;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.exit {
+  display: flex;
+  justify-content:center;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 400px;
+  border:  2px white solid;
+  width: 30px;
+  height: 30px;
+  color: white;
+  font-size: 20px;
+  background-color: rgb(4, 83, 202);
+  border-radius: 45px;
+  padding: 10px;
+  cursor:pointer;
 }
 
 nav {
@@ -27,43 +49,32 @@ nav {
   align-items: center;
 }
 
+
 .overlay {
   position:relative;
 }
 
-.exit {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top:-30px;
-  right:-380px;
-  background-color: rgb(4, 83, 202);
-  height: 30px;
-  width:30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 45px;
-  padding: 10px;
-  cursor:pointer;
-}
+
 
 .exit :hover {
   opacity:0.8;
 }
-.navbar a :hover {
+.navbar a:hover {
   opacity: 0.5;
 }
 
-
 .navbar div {
   font-weight: 400;
-  display: flex;
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 30px;
 }
 
-.graphics-container,
+
+
+
+
+
+
 .quality-container,
 .controls-container,
 .chat-container,
@@ -71,126 +82,91 @@ nav {
 .game-mechanics-container {
   background-color: rgb(4, 83, 202);
   font-size: 18px;
-  padding: 10px 40px;
-  height: 25px;
   border-radius: 8px;
-  display: flex;
-  white-space: nowrap;
-  justify-content: center;
-  align-items: center;
-  position: relative;
   opacity: 1;
   transition: opacity 0.15s;
   cursor: pointer;
+  width: 150px;
+  height: 45px;
+  text-align: center;
+  align-content: center;
 }
 
-.graphics-container:hover,
 .quality-container:hover,
 .controls-container:hover,
 .chat-container:hover,
 .keybinds-container:hover,
 .game-mechanics-container:hover {
   background-color: rgba(4, 83, 202, 0.418);
-  
 } 
 
 
-.disable-chat {
-  opacity:1;
-  transition: opacity 0.15s;
-  cursor: pointer;
-  z-index: 10;
-}
 
-.disable-chat :hover {
-  opacity: 0.6
+section {
+  display: flex;
 }
 
 
-span {
-  opacity: 1;
-  transition: opacity 0.15s;
-  cursor: pointer
+main {
+  display: flex;
+  align-items: center;
+  margin-left:20px;
 }
 
-span :hover {
-opacity: 0.4;
-}
-.chat-setting-container {
-  position: relative;
-}
+.box-container {
+  display: flex;
+  flex-direction: column; 
 
-
-
-.disable-circle {
-  position: absolute;
-  right: -20px;
-  top: 10px;
 }
 
-.disable-chat {
-  position: absolute;
-  right:-121px;
-  top: -18px;
-}
+/* box container is used to deal with the left side of the settings*/
 
-.status-circle {
-position: absolute;
-right: -145px;
-top: 10px;
-}
 .status-chat {
-  position: absolute;
-  right:-295px;
-  top: -17px;
-    
-}
-
-.text-size-container {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+  justify-content: flex-start;
+  margin-bottom: 10px !important;
 }
 
-.text-title {
-  position: absolute;
-  bottom: -67px;
-  right: -140px;
+input {
+  margin-right: 5px;
 }
 
-.smaller-button {
-  position: absolute;
-  bottom: -80px;
-  right: -225px;
+
+
+.text-button-container {
   display: flex;
-  align-items: center;
 }
 
-.normal-button {
-  position: absolute;
-  bottom: -80px;
-  right: -310px;
+div p {
   display: flex;
-  align-items: center;
 }
 
-.bigger-button {
-  position: absolute;
-  bottom: -80px;
-  right: -388px;
+div.text-size-container button {
   display: flex;
-  align-items: center;
+  justify-content: flex-start;
+  background-color: rgba(255, 145, 0, 0.87);
+  color: white;
+  padding: 10px 4px;
+  border: none;
+  border-radius: 3px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-right: 10px;
+
 }
 
-.smaller-button-circle,
-.normal-button-circle,
-.bigger-button-circle {
-  position: absolute;
-  top: -2px;
-  left: -18px;
+.is-Toggled {
+ background-color: rgba(207, 119, 3, 0.507) !important;
 }
+
+.quality-container,
+.controls-container,
+.keybinds-container,
+.game-mechanics-container {
+  border: 2px solid red;
+}
+
+
 
 
 

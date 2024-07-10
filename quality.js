@@ -1,5 +1,7 @@
 
-
+/* work on fixing button think where
+high and theme buttons you could only chosse one of theme) 
+*/
 function changeButton(selector) {
   const button = document.querySelector(selector);
   if(!button.classList.contains('is-toggled')) {
@@ -21,16 +23,16 @@ function turnOffPerviousButton() {
 }
 
 
-/*
-function changeTheme(selector) {
+
+function changeBlindness(selector) {
   const changeThemeButton = document.querySelector(selector);
-  if(!changeThemeButton.classList.contains('is-toggled-theme')) {
+  if(!changeThemeButton.classList.contains('is-Toggled-Blind')) {
     
     previousThemeButton();
   
-  changeThemeButton.classList.add('is-toggled-theme');
+  changeThemeButton.classList.add('is-Toggled-Blind');
   } else {
-    changeThemeButton.classList.remove('is-toggled-theme');
+    changeThemeButton.classList.remove('is-Toggled-Blind');
   }
 
 

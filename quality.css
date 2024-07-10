@@ -1,6 +1,10 @@
-div {
-  font-family: Arial;
+*{
+  margin: 0;
+  padding: 0;
 }
+
+
+
 
 body {
   background-color: rgba(5, 5, 5, 0.8);
@@ -10,6 +14,24 @@ body {
   margin-top: 80px;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.exit {
+  display: flex;
+  justify-content:center;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 400px;
+  border:  2px white solid;
+  width: 30px;
+  height: 30px;
+  color: white;
+  font-size: 20px;
+  background-color: rgb(4, 83, 202);
+  border-radius: 45px;
+  padding: 10px;
+  cursor:pointer;
 }
 
 nav {
@@ -27,28 +49,6 @@ nav {
   align-items: center;
 }
 
-
-.overlay {
-  position:relative;
-}
-
-.exit {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top:-30px;
-  right:-380px;
-  background-color: rgb(4, 83, 202);
-  height: 30px;
-  width:30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 45px;
-  padding: 10px;
-  cursor:pointer;
-}
-
 .exit :hover {
   opacity:0.8;
 }
@@ -59,9 +59,14 @@ nav {
 
 .navbar div {
   font-weight: 400;
-  display: flex;
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 30px;
+}
+
+
+
+.controls-container {
+  margin-top: 40px;
 }
 
 .quality-container,
@@ -71,21 +76,18 @@ nav {
 .game-mechanics-container {
   background-color: rgb(4, 83, 202);
   font-size: 18px;
-  padding: 10px 40px;
-  height: 25px;
   border-radius: 8px;
-  display: flex;
-  white-space: nowrap;
-  justify-content: center;
-  align-items: center;
-  position: relative;
   opacity: 1;
   transition: opacity 0.15s;
   cursor: pointer;
-  z-index: 1;
+  width: 150px;
+  height: 45px;
+  text-align: center;
+  align-content: center;
+
 }
 
-
+.quality-container:hover,
 .controls-container:hover,
 .chat-container:hover,
 .keybinds-container:hover,
@@ -93,48 +95,35 @@ nav {
   background-color: rgba(4, 83, 202, 0.418);
 } 
 
-.quality-container:hover {
-  background-color: rgba(4, 83, 202, 0.418);
-  cursor: pointer;
+
+
+section {
+display: flex;
 }
-
-
 
 
 .button-container {
-  position: absolute;
-  top: 20;
-  right:-220px;
-  margin-left: 5px;
-  z-index: 200;
-  margin-right: -30px;
-  opacity: 1;
-  transition: opacity 0.15s;
   cursor: pointer;
-  padding: 10px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  margin-left: -10px;
 }
-
-.quality-button div {
-  display: block;
-  justify-content: space-around;
-}
-
-
-
-
 
 
 .high-button,
 .medium-button,
 .low-button  {
-  
   background-color: rgba(255, 145, 0, 0.87);
   color: white;
   padding: 13px 20px;
+  height: 50px;
   border: none;
   border-radius: 3px;
   font-weight: 500;
   cursor: pointer;
+  margin-left: 20px;
+  margin-right: 5px;
 
 }
 
@@ -144,120 +133,55 @@ nav {
 }
 
 div .setting-button-container .is-toggled {
-  background-color: rgba(236,236,236);
-  color: black;
+  background-color: rgba(207, 119, 3, 0.507);
+  color: white;
 }
 
 div .dark-button .is-toggled {
-  background-color: black;
+  background-color: rgba(207, 119, 3, 0.507);
   color:  rgba(236,236,236);
 }
 
-.setting-button {
-  position: absolute;
-  left: 170px;
-  
+.is-Toggled-Blind{
+  background-color: rgba(207, 119, 3, 0.507) !important;
+  color: white !important;
 }
+
+main {
+  margin-bottom: 150px;
+  margin-top: -30px;
+  margin-left: 15px;
+  margin-right: 15px;
+  justify-content: center;
+}
+
 
 div .setting-button button {
   
   background-color: rgba(255, 145, 0, 0.87);
   color: white;
-  padding: 13px 10px;
-  overflow: hidden;
-  font-size: 15px;
+  padding: 10px 4px;
+  font-size: 14px;
   border: none;
   border-radius: 3px;
   font-weight: 500;
-  margin: 6px;
   cursor: pointer;
+  height: 50px;
+  margin-right: 6px;
+  margin-left: 10px;
 }
-
-
 
 .color-blind-button {
-  position: absolute;
-  top: 50px;
-  left: 60px;
-  height: max-content;
-  width: fit-content;
-  
-
+ margin-top: 10px;
 }
 
-
-
-.theme-buttons {
-  position: relative;
-
-  z-index: 20;
-}
-
-
-
-.circle-button-light
- {
-  position: absolute;
-  top: -3px;
-  left: -18px;
-  color: white;
-  border-width: 1px;
-}
-
-.circle-button-dark {
-  position: absolute;
-  top: -3px;
-  left: -18px;
-  margin-left: 2px;
-  color: white;
-  border-width: 1px;
-  opacity: 1;
-}
-
-.circle-button-color {
-  position: absolute;
-  bottom: -30px;
-  left: -137px;
-  opacity: 1;
-}
-
-
-.theme-text-light
- {
-  position: absolute;
-  top: 30px;
-  right: -180px;
-  opacity: 1;
-
-}
-
-.theme-text-dark {
- position: absolute;
- top: -29px;
- right: -120px
-}
-
-.theme-text-color {
-  position: absolute;
-  left: -120px;
-}
+.controls-container,
+.chat-container,
+.keybinds-container,
+.game-mechanics-container {
  
- 
+  border: 2px solid red;
 
-
-.high-button {
-  margin-left: 15px;
-  margin-right:-5px; 
-  opacity: 1;
 }
 
-.medium-button {
- margin-left: 10px;
- opacity: 1;
-}
 
-.low-button {
-  margin-left: 5px;
-  margin-right: -5px;
-  opacity: 1;
-}

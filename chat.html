@@ -5,69 +5,125 @@
   <title> Setting page </title>
 </head>
 <body>
-
   <div class="overlay">
-    <div class="exit"> X</div>
-   
+  
     <nav class="navbar">
-      <div class="quality-container">
-        <div><a href="quality.html">Quality</a></div>
-      </div>
+      <div class="exit"> X</div>
+      
+   
+   <section>
+    
+    
+    
+    
+    <div class="block-container">
+
+      <div class="quality-container"> <a href="quality.html">Quality</a></div>
+
 
       <div class="controls-container">
-        <div><a href="control.html">Controls</a></div>
+        <div><a href="control.html" >Controls</a></div>
       </div>
-
-      <section class="chat-container">
-        <div><a href="chat.html">Chat</a></div>
-       
-        <div class="chat-setting-container">
-
-          <span class="disable-circle">
-            &#128901;
-          </span>
-
-          <div class="disable-chat"> 
-            Disable chat
-          </div>
-          
-          <span class="status-circle">
-            &#128901;
-          </span>
-
-          <div class="status-chat">
-             Disable Status-log
-          </div>
-          
-          <div class="text-size-container">
-            <p class="text-title"> Text size:</p>
-            <div class="smaller-button">
-              <span class="smaller-button-circle">&#128901;</span>
-              Smaller
-            </div>
-            <div class="normal-button">
-              <span class="normal-button-circle">&#128901;</span>
-              Normal
-            </div>
-            <div class="bigger-button">
-              <span class="bigger-button-circle">&#128901;</span>
-              Bigger
-            </div>
-          </div>
+  
+     
+        <div class="chat-container">
+          <div><a href="chat.html">Chat</a></div>
         </div>
-      </section>
+  
 
+    
+    
+  
       <div class="keybinds-container">
         <div><a href="keybinds.html">Keybinds</a></div>
       </div>
-
+ 
       <div class="game-mechanics-container">
         <div><a href="game-mechanics.html">Mechanics</a></div>
       </div>
+    </div>
 
+    
+   
+   
+  <main>
+    <div class="box-container">
+
+    
+    <div class="status-chat">
+      <input type="checkbox" class="input-box">
+      Disable chat</div>
+
+      <div class="status-chat"> 
+        <input type="checkbox">
+        Disable Status-log
+      </div>
+
+    <div class="status-chat">
+      <input type="checkbox">
+       Enable player Mute
+    </div>
+
+      <div class="status-chat">
+        <input type="checkbox">
+        Use improved chat screening
+      </div>
+
+      <div class="status-chat">
+        <input type="checkbox">
+         Use improved 1v1 screening
+      </div>
+
+        <div class="text-size-container">
+           <p>Text size </p>
+          <div class="text-button-container">
+            <div class="smaller-button">
+              <button class=" white-button js-button"
+              onclick="textButton('.js-button');"
+              >Smaller</button>
+            </div>
+            <div class="normal-button">
+              <button class="js-button-2"
+              onclick="textButton('.js-button-2');"
+              >Normal</button>
+            </div>
+            <div class="bigger-button">
+              <button class="js-button-3"
+             onclick="textButton('.js-button-3');"
+              >Bigger</button>
+          </div>
+          </div>
+        
+      </div>
+    </main>
+    </section>
+    
+    <script>
+      function textButton(selector) {
+        const textButton = document.querySelector(selector);
+        if(!textButton.classList.contains('is-Toggled')) {
+
+          previousButton();
+
+          textButton.classList.add('is-Toggled');
+        } else {
+          textButton.classList.remove('is-Toggled');
+        }
+      }
+
+      function previousButton() {
+      const previousTitleButton = document.querySelector('.is-Toggled');
+      if(previousTitleButton) {
+        previousTitleButton.classList.remove('.is-Toggled');
+      }
+      }
+
+
+      /* fix script to have only one button chosen */
+    </script>
+
+   
   
-  </nav>
-  </div>
- 
+    
 </body>
 </html>
